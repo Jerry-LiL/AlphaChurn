@@ -1,0 +1,20 @@
+services:
+  documind:
+    build:
+      context: ..
+      dockerfile: documind/Dockerfile
+    ports:
+      - "8000:8000"
+    env_file:
+      - ../.env.example
+    environment:
+      STARTUP_INGEST: "1"
+      DOCS_PATH: /app/documind/sample_docs
+      CHROMA_PATH: /app/data/chroma
+      CATALOG_PATH: /app/data/catalog.sqlite
+      CHUNK_STORE: /app/data/chunks.json
+    volumes:
+      - documind-data:/app/data
+
+volumes:
+  documind-data:

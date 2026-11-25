@@ -1,0 +1,15 @@
+chromadb==1.5.9
+fastapi==0.165.0
+httpx==0.28.1
+langchain==1.5.2
+langchain-core==1.8.4
+langchain-ollama==1.2.0
+langchain-openai==1.8.5
+langchain-text-splitters==1.2.0
+langgraph==1.2.24
+ollama==0.6.3
+pydantic==2.14.4
+pypdf==7.1.1
+python-multipart==0.0.34
+rank-bm25==0.2.2
+uvicorn==0.54.0
